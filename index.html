@@ -18,14 +18,16 @@
             margin: auto;
         }
 
+        h1 {
+            font-size: clamp(1.63rem, 0.92rem + 1.89vw, 2.13rem);
+        }
+
         /* Grid Container - Mobile First (1 Spalte) */
         .grid-container {
             display: grid;
             /* Standard: 1 Spalte für kleine Bildschirme (Mobile) */
             grid-template-columns: 1fr; 
             gap: 2rem; /* Abstand zwischen den Kacheln */
-
-
         }
 
         /* Grid Element Stil (Kachel) */
