@@ -22,6 +22,13 @@
             font-size: clamp(1.63rem, 0.92rem + 1.89vw, 2.13rem);
         }
 
+    
+        h3 {
+            margin-top: 1rem;
+            font-size: 1.25rem;
+            margin-bottom: 0;
+        }
+
         /* Grid Container - Mobile First (1 Spalte) */
         .grid-container {
             display: grid;
@@ -56,6 +63,14 @@
             font-family: Inter, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
             color: #959595;
         }
+
+
+        @media (min-width: 1024px) {
+            .sub-container {
+                /* 4 Spalten gleicher Breite mit repeat(Anzahl, Breite) */
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
     </style>
 </head>
 <body>
@@ -66,8 +81,53 @@
                 <figure>
                     <img src="/img/Some/angle1-8.png" alt="front-shot" loading="lazy">
                 </figure>
-                <h4>1. Eye Level Shot</h4> 
-                <p>Camera placed at the subject’s eye level for a natural and balanced perspective.</p>
+                <div class="sub-container">
+                    <div>
+                        <h3>1. Eye Level Shot</h3> 
+                        <p>Camera placed at the subject’s eye level for a natural and balanced perspective.</p>
+                    </div>
+                    <div>
+                        <h3>2. Low Angle Shot</h3>
+                        <p>Camera positioned below the subject, looking upward to create power and dominance.</p>
+                    </div>
+                    <div>
+                        <h3>3. High Angle Shot</h3>
+                        <p>Camera placed above the subject, looking downward for a softer or more vulnerable feel.</p>                   
+                    </div>
+                    <div>
+                        <h3>4. Top Down Shot</h3>
+                        <p>Direct overhead perspective capturing the subject from above in a graphic composition.</p>
+                    </div>
+                    <div>
+                        <h3>5. Dutch Angle</h3>
+                        <p>Tilted camera angle creating tension, energy, or cinematic unease.</p>
+                    </div>
+                    <div>
+                        <h3>6. Close Up</h3>
+                        <p>Framing tightly around the face to emphasize emotion and detail.</p>
+                    </div>
+                    <div>
+                        <h3>7. Extreme Close Up</h3>
+                        <p>Ultra-tight framing focused on a facial detail like eyes or lips.</p>
+                    </div>
+                    <div>
+                        <h3>8. Macro Shot</h3>
+                        <p>Extreme detail shot revealing texture, skin, reflections, or wine details.</p>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
             </div>
             <div class="grid-item">
                 <h4>1. Eye Level Shot</h4> 
