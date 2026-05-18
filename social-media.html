@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vino Vintana - Label Conceptions</title>
+
+    <style>
+        /* Globale Stile */
+        body {
+            font-family: Bahnschrift, "DIN Alternate", "Franklin Gothic Medium";
+            margin: 0;
+            padding: 20px;
+            background-color: #1B1B1B;
+            color: #ffffff;
+            max-width: 1240px;
+            margin: auto;
+        }
+
+        h1 {
+            margin-top: 3rem;
+            font-size: clamp(1.63rem, 0.92rem + 1.89vw, 2.13rem);
+        }
+
+        /* Grid Container - Mobile First (1 Spalte) */
+        .grid-container {
+            display: grid;
+            /* Standard: 1 Spalte für kleine Bildschirme (Mobile) */
+            grid-template-columns: 1fr; 
+            gap: 2rem; /* Abstand zwischen den Kacheln */
+        }
+
+        /* Grid Element Stil (Kachel) */
+        .grid-item {
+            overflow: hidden; 
+        }
+
+        /* Figure-Element für Bild und Unterschrift */
+        .grid-item figure {
+            margin: 0; /* Entfernt den Standard-Margin des Figure-Elements */
+        }
+
+        /* Bild-Stil */
+        .grid-item img {
+            background-color: white;
+            width: 100%; /* Bild füllt die gesamte Breite der Kachel */
+            height: auto;
+            display: block;
+            aspect-ratio: 16/9;
+        }
+
+        /* Bildunterschrift-Stil */
+        .grid-item figcaption {
+            font-size: 1rem;
+            padding-block: 1rem;
+            font-family: Inter, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+            color: #959595;
+        }
+
+        /* ➡️ Media Query für Tablet (mindestens 600px) - 2 Spalten */
+        @media (min-width: 600px) {
+            .grid-container {
+                /* 2 Spalten gleicher Breite */
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Angles</h1>
+        <div class="grid-container">
+            <div class="grid-item">
+                <figure>
+                    <img src="/img/Some/angle1-8.png" alt="front-shot" loading="lazy">
+                    <figcaption>Angles 1-8</figcaption>
+                </figure>
+            </div>
+            <div class="grid-item">
+                <figure>
+                    <img src="/img/Some/angle9-16.png" alt="front-shot" loading="lazy">
+                    <figcaption>FAT VERSION - V1</figcaption>
+                </figure>
+            </div>
+            <div class="grid-item">
+                <figure>
+                    <img src="/img/Some/angle9-16.png" alt="front-shot" loading="lazy">
+                    <figcaption>FAT VERSION - V1</figcaption>
+                </figure>
+            </div>
+            <div class="grid-item">
+                <figure>
+                    <img src="/img/Some/angle17-24.png" alt="front-shot" loading="lazy">
+                    <figcaption>FAT VERSION - V1</figcaption>
+                </figure>
+            </div>
+            <div class="grid-item">
+                <figure>
+                    <img src="/img/Some/angle_expression25-32.png" alt="front-shot" loading="lazy">
+                    <figcaption>FAT VERSION - V1</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div>
+            1. Eye Level Shot
+            Camera placed at the subject’s eye level for a natural and balanced perspective.
+
+            2. Low Angle Shot
+            Camera positioned below the subject looking upward to create power and dominance.
+
+            3. High Angle Shot
+            Camera placed above the subject looking downward for a softer or more vulnerable feel.
+
+            4. Top Down Shot
+            Direct overhead perspective capturing the subject from above in a graphic composition.
+
+            5. Dutch Angle
+            Tilted camera angle creating tension, energy, or cinematic unease.
+
+            6. Close Up
+            Framing tightly around the face to emphasize emotion and detail.
+
+            7. Extreme Close Up
+            Ultra-tight framing focused on a facial detail like eyes or lips.
+
+            8. Macro Shot
+            Extreme detail shot revealing texture, skin, reflections, or wine details.
+        </div>
+        <h1>Facial Expressions</h1>
+        <div class="grid-container">
+            <div class="grid-item">
+                <figure>
+                    <img src="/img/Some/expression1-8.png" alt="front-shot" loading="lazy">
+                    <figcaption>FAT VERSION - V1</figcaption>
+                </figure>
+            </div>
+            <div class="grid-item">
+                <figure>
+                    <img src="/img/Some/expression9-16.png" alt="front-shot" loading="lazy">
+                    <figcaption>FAT VERSION - V1</figcaption>
+                </figure>
+            </div>
+            <div class="grid-item">
+                <figure>
+                    <img src="/img/Some/expression17-26.png" alt="front-shot" loading="lazy">
+                    <figcaption>FAT VERSION - V1</figcaption>
+                </figure>
+            </div>
+            <div class="grid-item">
+                <figure>
+                    <img src="/img/Some/expression25-30.png" alt="front-shot" loading="lazy">
+                    <figcaption>FAT VERSION - V1</figcaption>
+                </figure>
+            </div>
+            <div class="grid-item">
+                <figure>
+                    <img src="/img/Some/expression31-36.png" alt="front-shot" loading="lazy">
+                    <figcaption>FAT VERSION - V1</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
