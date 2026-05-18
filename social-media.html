@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vino Vintana - Label Conceptions</title>
+    <title>Vino Vintana - Social Media Angles & Expressions</title>
 
     <style>
         /* Globale Stile */
@@ -27,6 +27,10 @@
             margin-top: 1rem;
             font-size: 1.25rem;
             margin-bottom: 0;
+        }
+        
+        h3 + p {
+            margin-top: 0;
         }
 
         /* Grid Container - Mobile First (1 Spalte) */
@@ -67,7 +71,9 @@
 
         @media (min-width: 1024px) {
             .sub-container {
-                /* 4 Spalten gleicher Breite mit repeat(Anzahl, Breite) */
+                display: grid;
+                /* Standard: 1 Spalte für kleine Bildschirme (Mobile) */
+                gap: 2rem; /* Abstand zwischen den Kacheln */
                 grid-template-columns: repeat(2, 1fr);
             }
         }
@@ -114,18 +120,6 @@
                         <h3>8. Macro Shot</h3>
                         <p>Extreme detail shot revealing texture, skin, reflections, or wine details.</p>
                     </div>
-
-
-
-
-
-
-
-
-
-
-
-
                 </div>
 
             </div>
