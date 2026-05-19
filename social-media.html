@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social Media Angles & Expressions</title>
+    <title>Angles, Facial Expressions & Camera-movements</title>
 
     <style>
         /* Globale Stile */
@@ -22,7 +22,6 @@
             font-size: clamp(1.63rem, 0.92rem + 1.89vw, 2.13rem);
         }
 
-    
         h3 {
             margin-top: 1rem;
             font-size: 1.25rem;
@@ -31,6 +30,12 @@
 
         h3 + p {
             margin-top: 0.25rem;
+            font-family: monospace;
+        }
+
+        .content {
+            max-width: 100ch;
+            font-size: 1.15rem;
         }
 
         /* Grid Container - Mobile First (1 Spalte) */
@@ -39,6 +44,7 @@
             /* Standard: 1 Spalte für kleine Bildschirme (Mobile) */
             grid-template-columns: 1fr; 
             gap: 2rem; /* Abstand zwischen den Kacheln */
+            margin-bottom: 4rem;
         }
 
         /* Grid Element Stil (Kachel) */
@@ -49,6 +55,8 @@
         /* Figure-Element für Bild und Unterschrift */
         .grid-item figure {
             margin: 0; /* Entfernt den Standard-Margin des Figure-Elements */
+            border: 1px solid #383838;
+            border-radius: 4px;
         }
 
         /* Bild-Stil */
@@ -59,22 +67,89 @@
             display: block;
             aspect-ratio: 16/9;
         }
+        .sub-container {
+            display: grid;
+            margin-top: 1rem;
+            row-gap: 1rem;
+        }
 
+        .sub-container > div{
+            position:relative;
+            font-size: 0.85rem;
+            padding: 12px 40px 12px 12px;
+            color: #aaa;
+            line-height: 1.4;
+            border: 1px solid #383838;
+            border-radius: 4px;
+        }
 
+        .copy-icon-btn{
+            border: none;
+            background-color: inherit;
+            position:absolute;
+            top:10px;
+            right:10px;
+            color: #fff;
+            transition: opacity 0.2s ease, transform 0.1s;
+            width:38px;
+            height:38px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            cursor:pointer;
+        }
+
+        .copy-icon-btn:hover{
+            opacity:0.85;
+        }
+
+        .copy-icon-btn svg{
+            width:18px;
+            height:18px;
+            stroke:currentColor;
+            fill:none;
+            stroke-width:2;
+            position:absolute;
+        }
+               
         @media (min-width: 1024px) {
             .sub-container {
-                display: grid;
-                /* Standard: 1 Spalte für kleine Bildschirme (Mobile) */
-                column-gap: 2rem; /* Abstand zwischen den Kacheln */
+                gap: 1rem 2rem; /* Abstand zwischen den Kacheln */
                 grid-template-columns: repeat(2, 1fr);
-                margin-top: 1rem;
             }
         }
     </style>
 </head>
 <body>
+    <div class="content">
+        <h1>Social Media Angles & Facial Expressions</h1>
+        <p>Angles, Facial Expressions und Camera Movements sind die drei wichtigsten Ebenen für cineastisches Visual Storytelling.
+            Sie bestimmen nicht nur wie etwas aussieht, sondern wie es sich emotional anfühlt.</p>
+        <h2>Angles</h2>
+        <p>Camera Angles definieren die Perspektive der Kamera auf das Motiv.
+            Sie beeinflussen Macht, Nähe, Dominanz, Verletzlichkeit oder Spannung.</p>
+            <ul>
+                <li>
+                    Low Angle Shot → Macht, Autorität, Heroismus
+                </li>
+                <li>
+                    High Angle Shot → Verletzlichkeit, Ruhe, Unterordnung
+                </li>
+                <li>
+                    Eye Level Shot → Natürlichkeit, Ehrlichkeit, Balance
+                </li>
+                <li>
+                    Dutch Angle → Spannung, Chaos, Unruhe
+                </li>
+                <li>
+                    Top Down Shot → grafische Kontrolle, Isolation, Ästhetik
+                </li>
+            </ul>
+            <p>
+
+            Angles verändern also die psychologische Wahrnehmung der Figur.</p>
+    </div>
     <div>
-        <h1>Angles</h1>
         <div class="grid-container">
             <div class="grid-item">
                 <figure>
@@ -114,7 +189,6 @@
                         <p>Extreme detail shot revealing texture, skin, reflections, or wine details.</p>
                     </div>
                 </div>
-
             </div>
             <div class="grid-item">
                 <figure>
@@ -255,8 +329,33 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="content">
+        <h2>Facial Expressions</h2>
+        <p>Facial Expressions transportieren Emotionen direkt über Gesicht, Augen und Mikroreaktionen.
+            Sie erzeugen emotionale Verbindung zwischen Zuschauer und Motiv.</p>
+            <ul>
+                <li>
+                   Soft Smile → Wärme, Vertrauen
+                </li>
+                <li>
+                    Intense Stare → Spannung, Stärke
+                </li>
+                <li>
+                    Dreamy Expression → Sehnsucht, Poesie
+                </li>
+                <li>
+                    Thoughtful Expression → Tiefe, Reflexion
+                </li>
+                <li>
+                    Wild Ecstatic Laugh → Freiheit, Energie
+                </li>
+            </ul>
+            <p>
 
-        <h1>Facial Expressions</h1>
+            Expressions bestimmen die emotionale Stimmung des Bildes.</p>
+    </div>
+    <div>
         <div class="grid-container">
             <div class="grid-item">
                 <figure>
@@ -483,6 +582,345 @@
             </div>
         </div>
     </div>
+    <div class="content">
+        <h2>Camera Movements</h2>
+        <p>via aishotstudio.com - <a style="color:#fff" href=" https://aishotstudio.com/42-camera-movements-ai-prompts/">42-camera-movements-ai-prompts</a></p>
+        <p>Camera Movements erzeugen Dynamik, Rhythmus und Immersion.
+            Sie lassen ein Bild lebendig und filmisch wirken.</p>
+            <ul>
+                <li>
+                   Tracking Shot → Bewegung, Flow, Begleitung
+                </li>
+                <li>
+                    Push In → emotionale Intensität
+                </li>
+                <li>
+                    Pull Back → Distanz oder Offenbarung
+                </li>
+                <li>
+                   Handheld Movement → Authentizität, Rohheit
+                </li>
+                <li>
+                    Slow Orbit Shot → Eleganz, cineastische Präsenz
+                </li>
+            </ul>
+            <p>
 
+            Movements beeinflussen wie sich eine Szene „anfühlt“ in Zeit und Raum.</p>
+         
+    </div>
+    <div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <figure>
+                    <img src="/img/Movements/movements1-8.webp" alt="Movements" loading="lazy">
+                </figure>
+                <div class="sub-container">
+                    <div>
+                        <h3>1. Slow Dolly In</h3>
+                        <p>Camera slowly moves forward toward the subject, creating intimacy, tension, or emotional focus.</p>
+                    </div>
+
+                    <div>
+                        <h3>2. Slow Dolly Out</h3>
+                        <p>Camera slowly pulls backward away from the subject, creating isolation or emotional distance.</p>
+                    </div>
+
+                    <div>
+                        <h3>3. Fast Dolly In</h3>
+                        <p>Rapid forward camera movement adding urgency, shock, or dramatic intensity.</p>
+                    </div>
+
+                    <div>
+                        <h3>4. Vertigo Effect (Zolly)</h3>
+                        <p>Camera moves backward while zooming inward, creating spatial distortion and psychological tension.</p>
+                    </div>
+
+                    <div>
+                        <h3>5. Extreme Macro Zoom</h3>
+                        <p>Extreme zoom into tiny details like skin, eyes, texture, or surfaces for hyper realism.</p>
+                    </div>
+
+                    <div>
+                        <h3>6. Cosmic Hyper Zoom</h3>
+                        <p>Massive cinematic zoom transition from wide environment into microscopic detail.</p>
+                    </div>
+
+                    <div>
+                        <h3>7. Over the Shoulder (OTS) Shot</h3>
+                        <p>Camera positioned behind one subject looking toward another to create conversational immersion.</p>
+                    </div>
+
+                    <div>
+                        <h3>8. Fisheye or Peephole Lens</h3>
+                        <p>Ultra wide distorted lens creating exaggerated perspective and surreal framing.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <figure>
+                    <img src="/img/Movements/movements9-16.webp" alt="Movements" loading="lazy">
+                </figure>
+                <div class="sub-container">
+                    <div>
+                        <h3>9. Reveal from Behind</h3>
+                        <p>Wipe movement where the camera slides laterally from behind a foreground object to reveal the scene.</p>
+                    </div>
+
+                    <div>
+                        <h3>10. Through Shot</h3>
+                        <p>Camera moves through an opening, doorway, frame, or object into the scene.</p>
+                    </div>
+
+                    <div>
+                        <h3>11. Reveal from Blur</h3>
+                        <p>Shot begins out of focus and slowly sharpens to reveal the subject clearly.</p>
+                    </div>
+
+                    <div>
+                        <h3>12. Rack Focus</h3>
+                        <p>Focus shifts from a foreground object to the background subject, or the other way around.</p>
+                    </div>
+
+                    <div>
+                        <h3>13. Tilt Up</h3>
+                        <p>Camera tilts vertically upward from bottom to top to reveal the subject or environment.</p>
+                    </div>
+
+                    <div>
+                        <h3>14. Tilt Down</h3>
+                        <p>Camera tilts vertically downward from top to bottom for a controlled reveal.</p>
+                    </div>
+
+                    <div>
+                        <h3>15. Camera Truck Left</h3>
+                        <p>Camera moves sideways on a track or stable path to the left.</p>
+                    </div>
+
+                    <div>
+                        <h3>16. Lateral Truck Right</h3>
+                        <p>Camera moves sideways on a track or stable path to the right.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <figure>
+                    <img src="/img/Movements/movements17-24.webp" alt="Movements" loading="lazy">
+                </figure>
+                <div class="sub-container">
+                    <div>
+                        <h3>17. Orbit 180 (Spin)</h3>
+                        <p>Camera or subject rotates halfway around to create movement, reveal, and cinematic energy.</p>
+                    </div>
+
+                    <div>
+                        <h3>18. Fast 360 Orbit (Spin)</h3>
+                        <p>Fast circular movement around the subject creating dynamic momentum and dramatic impact.</p>
+                    </div>
+
+                    <div>
+                        <h3>19. True Orbit 180</h3>
+                        <p>Camera moves in a controlled half-circle around the subject while keeping focus locked.</p>
+                    </div>
+
+                    <div>
+                        <h3>20. True Orbit 360</h3>
+                        <p>Camera fully circles around the subject for an immersive and cinematic perspective shift.</p>
+                    </div>
+
+                    <div>
+                        <h3>21. Slow Cinematic Arc</h3>
+                        <p>Camera slowly arcs around the subject to create elegance, depth, and emotional tension.</p>
+                    </div>
+
+                    <div>
+                        <h3>22. Pedestal Down</h3>
+                        <p>Camera moves vertically downward while keeping the same angle and framing control.</p>
+                    </div>
+
+                    <div>
+                        <h3>23. Pedestal Up</h3>
+                        <p>Camera moves vertically upward to reveal posture, presence, or heroic perspective.</p>
+                    </div>
+
+                    <div>
+                        <h3>24. Crane Up (High Angle Reveal)</h3>
+                        <p>Camera rises upward into a high angle to reveal scale, space, and environment.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <figure>
+                    <img src="/img/Movements/movements25-32.webp" alt="Movements" loading="lazy">
+                </figure>
+                <div class="sub-container">
+                    <div>
+                        <h3>25. Crane Down (Landing)</h3>
+                        <p>Camera descends slowly toward the subject, creating a controlled landing reveal.</p>
+                    </div>
+
+                    <div>
+                        <h3>26. Smooth Optical Zoom In</h3>
+                        <p>Lens smoothly magnifies the subject while the camera remains stationary.</p>
+                    </div>
+
+                    <div>
+                        <h3>27. Smooth Optical Zoom Out</h3>
+                        <p>Lens smoothly widens away from the subject, revealing more of the surrounding scene.</p>
+                    </div>
+
+                    <div>
+                        <h3>28. Snap Zoom (Crash Zoom)</h3>
+                        <p>A rapid zoom directly into the subject, creating surprise, comedy, or dramatic impact.</p>
+                    </div>
+
+                    <div>
+                        <h3>29. Drone Fly Over</h3>
+                        <p>High-altitude drone movement flying forward over the landscape.</p>
+                    </div>
+
+                    <div>
+                        <h3>30. Epic Drone Reveal</h3>
+                        <p>Drone rises or tilts to reveal a large environment with cinematic scale.</p>
+                    </div>
+
+                    <div>
+                        <h3>31. Large Scale Drone Orbit</h3>
+                        <p>Drone circles widely around a landscape, building grandeur and spatial drama.</p>
+                    </div>
+
+                    <div>
+                        <h3>32. Top Down (God's Eye View)</h3>
+                        <p>Camera points straight downward from above, creating a graphic overhead perspective.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <figure>
+                    <img src="/img/Movements/movements33-40.webp" alt="Movements" loading="lazy">
+                </figure>
+                <div class="sub-container">
+                    <div>
+                        <h3>33. FPV Drone Aggressive (Drone Dive)</h3>
+                        <p>High-speed FPV drone dive creating intense motion and adrenaline-filled perspective.</p>
+                    </div>
+
+                    <div>
+                        <h3>34. Handheld Documentary Style</h3>
+                        <p>Natural handheld camera movement with subtle shake for raw documentary realism.</p>
+                    </div>
+
+                    <div>
+                        <h3>35. Whip Pan</h3>
+                        <p>Fast horizontal camera whip creating motion blur and energetic scene transitions.</p>
+                    </div>
+
+                    <div>
+                        <h3>36. Dutch Angle (Roll)</h3>
+                        <p>Tilted camera roll creating tension, instability, or psychological unease.</p>
+                    </div>
+
+                    <div>
+                        <h3>37. Leading Shot (Backward Tracking)</h3>
+                        <p>Camera moves backward in front of the subject while matching their movement speed.</p>
+                    </div>
+
+                    <div>
+                        <h3>38. Following Shot (Forward Tracking)</h3>
+                        <p>Camera follows directly behind the subject to create immersion and cinematic flow.</p>
+                    </div>
+
+                    <div>
+                        <h3>39. Side Tracking (Parallel)</h3>
+                        <p>Camera tracks sideways alongside the moving subject for smooth cinematic motion.</p>
+                    </div>
+
+                    <div>
+                        <h3>40. POV Walk (First Person Walk)</h3>
+                        <p>First-person perspective movement simulating realistic walking motion and immersion.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <figure>
+                    <img src="/img/Movements/movements41-44.webp" alt="Movements" loading="lazy">
+                </figure>
+                <div class="sub-container">
+                    <div>
+                        <h3>41. Hyperlapse (Moving Time-Lapse)</h3>
+                        <p>Fast moving time-lapse sequence combining accelerated motion with dynamic camera travel.</p>
+                    </div>
+
+                    <div>
+                        <h3>42. Barrel Roll (Vortex Inception Shot)</h3>
+                        <p>Camera spins in a full 360-degree roll while moving forward for a disorienting cinematic effect.</p>
+                    </div>
+
+                    <div>
+                        <h3>43. Bullet Time (Frozen Moment)</h3>
+                        <p>Ultra slow-motion effect where time appears frozen while the camera moves around the subject.</p>
+                    </div>
+
+                    <div>
+                        <h3>44. Worm’s Eye Tracking (Ground Level)</h3>
+                        <p>Extreme low-angle tracking shot moving along the ground while looking upward.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', () => {
+
+            document.querySelectorAll('.sub-container > div').forEach(item => {
+
+                const button = document.createElement('button');
+
+                button.classList.add('copy-icon-btn');
+
+                button.innerHTML = `
+                    <svg viewBox="0 0 24 24" class="icon-copy">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+
+                    <svg viewBox="0 0 24 24" class="icon-check" style="display:none;">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                `;
+
+                item.appendChild(button);
+
+                button.addEventListener('click', () => {
+
+                    const text = item.innerText.trim();
+
+                    navigator.clipboard.writeText(text);
+
+                    const copyIcon = button.querySelector('.icon-copy');
+                    const checkIcon = button.querySelector('.icon-check');
+
+                    copyIcon.style.display = 'none';
+                    checkIcon.style.display = 'block';
+
+                    setTimeout(() => {
+
+                        copyIcon.style.display = 'block';
+                        checkIcon.style.display = 'none';
+
+                    }, 1500);
+
+                });
+
+            });
+
+        });
+
+    </script>
 </body>
 </html>
